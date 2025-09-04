@@ -21,6 +21,7 @@ services:
       MYSQL_USER: 'db_admin'
       MYSQL_PASSWORD: ''
       MYSQL_ROOT_PASSWORD: ''
+      MYSQL_ALLOW_EMPTY_PASSWORD: true
     ports:
       # <host-port>:<container-port>
       - '3306:3306'
@@ -50,3 +51,4 @@ networks:
 volumes:
   db_data:
     driver: local
+ 
